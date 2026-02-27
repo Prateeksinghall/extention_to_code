@@ -7,7 +7,7 @@ import { createComponentPrompt, createLayoutPrompt, createVisionPrompt } from ".
  * Now supports vision-based generation when screenshot is available
  */
 export async function generateCode(request: CodeGenerationRequest): Promise<CodeGenerationResult> {
-  const { analysis, componentName = "page", includePages = true, outputFormat = "tsx", useVision = true } = request
+  const { analysis , componentName = "page", includePages = true, outputFormat = "tsx", useVision = true } = request
 
   // Use vision-based generation if screenshot is available
   let componentCode: string
